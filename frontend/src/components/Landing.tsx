@@ -25,8 +25,8 @@ const Landing = () => {
         <div className="flex flex-grow w-2/4 flex-col gap-5 ">
           <div className=" flex flex-col  h-1/3  bg-gray-900 rounded-3xl justify-evenly items-center">
             <div className="flex flex-col justify-center items-center bg-gray-900">
-              <h3 className="text-2xl font-bold mb-2">Add Captions Easily</h3>
-              <p className="text-sm">
+              <h3 className="text-2xl font-bold mb-2 bg-gray-900">Add Captions Easily</h3>
+              <p className="text-sm bg-gray-900">
                 Upload your video and get clear captions in minutes. No editing
                 software required!
               </p>
