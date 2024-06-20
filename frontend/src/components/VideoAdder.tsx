@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
+const API_URL = import.meta.env.VITE_API_URL;
 
 const VideoAdder = () => {
   const [videoUrl, setVideoUrl] = useState("");
@@ -30,12 +31,12 @@ const VideoAdder = () => {
   const handleAddCaption = async (e: React.MouseEvent<HTMLButtonElement>) => {
     e.preventDefault();
     try {
-      await axios.post("http://localhost:3000/caption", {
+      await axios.post(`${API_URL}/caption`, {
         videoUrl,
         captions: [{ text, timestamp: parseFloat(timestamp) }],
       });
       const response = await axios.get(
-        `http://localhost:3000/captions/${encodeURIComponent(videoUrl)}`
+        `${API_URL}/captions/${encodeURIComponent(videoUrl)}`
       );
       setCaptions(response.data.captions);
       setText("");
