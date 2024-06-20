@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import { useRef } from "react";
 import VideoAdder from "./VideoAdder";
 import bentoImg1 from "./../assets/caption1.jpg";
 import bentoImg2 from "./../assets/caption.jpg";
