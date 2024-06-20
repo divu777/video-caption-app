@@ -81,5 +81,3 @@ Follow these steps to run the project locally.
 1. Ensure MongoDB is running on your local machine or accessible through the provided `MONGODB_URI`.
 2. Run both frontend and backend servers.
 3. Open your browser and navigate to `http://localhost:3000` to start using Subly.
-
-## Folder Structure
